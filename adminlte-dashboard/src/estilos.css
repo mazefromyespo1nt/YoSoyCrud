@@ -1,0 +1,326 @@
+/*contenido general*/
+.appcontenido{
+   height: 90vh;
+   overflow: hidden;
+
+}
+.appcontenido .App{
+  height: 90vh;
+  overflow: hidden;
+
+}
+/* Flechas apuntando a los widgets */
+.arrow-container span{
+  top: -8px;
+  left: 10px;
+}
+.arrowtuto{
+  text-align: left;
+}
+/* Flecha tutorial */
+.arrow-tutorial {
+  font-size: 36px;
+  color: #007bff;  
+
+}
+
+.arrow-tutorial-text{
+  position: relative;
+
+}
+/* Flecha terminal */
+.arrow-terminal {
+  position: relative;
+
+  font-size: 36px;
+  color: #28a745; 
+
+}
+.arrow-container{
+  margin-bottom: 7px;
+}
+.arrow-terminal-text{
+  position: relative;
+
+  
+}
+.arrowremote{
+
+}
+/* Flecha sql */
+.arrow-remote{
+    position: relative;
+
+  font-size: 36px;
+  color: #ff0730; 
+  
+}
+/* Flecha sql */
+.arrow-sql {
+  position: relative;
+
+  font-size: 36px;
+  color: #ffc107; 
+  
+}
+
+.arrow-sql-text{
+  position: relative;
+
+ 
+}
+
+/*MODALES DE lanfuageSlection.tsx*/
+/* darle un fondo oscuro y blur al fondo de modal de seleccion de lenguaje y arquitectura */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.modal-overlay {
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.modal-overlay.d-none {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* modal de seleccion de lenguaje y arquitectura */
+.modal-language-architecture {
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 90px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  width: 800px;
+  text-align: center;
+}
+/*texto modal de lenguaje y arquitectura titulo*/
+.modal-language-architecture h2 {
+  position: absolute;
+  top: 20px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  font-size: 1.9rem; 
+}
+/*texto modal de lenguaje y arquitectura instrucciones */
+.architecture-selection h3 {
+  position: absolute;
+  top: 65px; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem; 
+  text-align: center; 
+}
+
+/* darle un fondo oscuro y blur al fondo de modal de seleccion de guardar configuracion */
+.custom-backdrop {
+  background-color: rgba(10, 10, 10, 0.781); 
+  backdrop-filter: blur(7px); 
+  -webkit-backdrop-filter: blur(12px); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1040; 
+  transition: opacity 0.3s ease; 
+  opacity: 0; 
+}
+
+.custom-backdrop.show {
+  opacity: 1; 
+}
+
+/* Estilo común para los botones */
+.modal-footer .btn {
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Botón primario */
+.modal-footer .btn-primary {
+  background-color: #007bff;
+  position: relative;
+  right: 120px;
+  border: none;
+}
+
+.modal-footer .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Botón secundario */
+.modal-footer .btn-secondary {
+  background-color: #6c757d;
+  position: relative;
+  right: 120px;
+  border: none;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Estilo de botones en selección de lenguaje */
+.language-selection button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #2e3337;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.language-selection button:hover {
+  background-color: #0056b3;
+}
+/* boton de lenguaje logo tamaño */
+.language-selection img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para los botones de arquitectura */
+.architecture-selection .architecture-btn {
+  margin: 15px 10px; 
+  padding: 10px 20px; 
+  border-radius: 5px;
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover para los botones de arquitectura */
+.architecture-selection .architecture-btn:hover {
+  background-color: #0056b3; 
+}
+
+/* posicion botones arquitectura */
+.architecture-selection .architecture-btn {
+  position: static; 
+  margin: 15px 10px; 
+}
+
+
+
+/*boton regresar*/
+/* Estilo optimizado para el botón regresar */
+.back-button {
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  background-color: rgb(73, 73, 73); 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px;
+  cursor: pointer; 
+  z-index: 1050; 
+  font-size: 16px; 
+}
+
+
+/* color boton regresar*/
+.architecture-selection .back-button {
+  background-color: rgb(73, 73, 73);
+  color: white; 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*color over boton regresar*/
+.architecture-selection .back-button:hover {
+  background-color: rgb(26, 26, 26); 
+}
+
+.language-logo {
+  margin: 1px 0;
+}
+
+.language-logo img {
+  width: 40px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* Estilo para textarea */
+.custom-textarea {
+    background-color: rgb(49, 49, 49);   
+    color: yellow;            
+    font-family: Consolas, Monaco, monospace;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    resize: none; 
+  }
+  
+  .custom-textarea:focus {
+    background-color: rgb(49, 49, 49);  
+    color: yellow;            
+    outline: none;             
+  }
+  
+  .custom-textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); 
+    font-weight: bolds;
+  }
+
+  .custom-button {
+    margin-right: 10px;
+  }
+
+  /* relaciones*/
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  margin-top: 20px;
+}
+.titleColumns{
+  margin:auto;
+  display: block;
+  margin-top:40px;
+  text-align: center;
+}
+.tableslist{
+  font-weight: bolder;
+  text-align: left;
+}
+.tableslist hr{
+  height: 40px;
+}
+.deleteTable{
+  color:red;
+  float:right;
+  cursor: pointer;
+}
+.deleteTable:hover{
+  color:blue;
+ 
+  cursor: pointer;
+}

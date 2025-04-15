@@ -1,0 +1,9 @@
+{
+  "SERVER_URL_TABLES": "http://localhost/adminlte-dashboard/crear_tablas.php"    ,
+    "server_generador": "https://crudgen.valorpoint.net/core/index.php?generator=new&uuid=",
+   "SERVER_REGISTRO": "http://localhost/registro.php",
+    "SERVER_VALIDAR_CODIGO": "http://localhost/adminlte-dashboard/validar_codigo.php",
+    "SERVER_GENERATEANGULAR": "http://localhost/adminlte-dashboard/generateAngularCrud.php",
+    "SERVER_CALLER_LENGUAGE": "http://localhost/adminlte-dashboard/src/Component/CallerLanguage.php"
+}
+ 

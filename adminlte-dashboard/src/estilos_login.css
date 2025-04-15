@@ -1,0 +1,127 @@
+/* ajustes generales del modal */
+.modal-content {
+    border-radius: 12px;
+    padding: 20px;
+  }
+  
+  .modal-header {
+    border-bottom: none;
+    text-align: center;
+  }
+  
+  .modal-title {
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* ajuste de inputs */
+  .modal-body input {
+    height: 50px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  /* contenedor del input con botón de editar */
+  .input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px; /* agregamos espacio entre correo y contraseña */
+  }
+  
+  .input-with-edit {
+    width: 100%;
+    padding-right: 60px; /* espacio para el botón "Editar" */
+  }
+  
+  /* estilo del botón "Editar" dentro del input */
+  .edit-button {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: #0066cc;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .edit-button:hover {
+    text-decoration: underline;
+  }
+  
+  /* botón principal */
+  .btn-primary {
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+ 
+  .modal-body hr {
+    width: 100%;
+    border-top: 1px solid #ddd;
+  }
+  
+  .text-center {
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  /* botones de gsoogle y faacebook */
+  .btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-social:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* logso dentro de los botones */
+  .btn-social img {
+    width: 24px;  /* tamaño del logo */
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  /* ajustes paraa pantallas pequeñas */
+  @media (max-width: 480px) {
+    .modal-content {
+      padding: 15px;
+    }
+  
+    .modal-title {
+      font-size: 20px;
+    }
+  
+    .btn-primary,
+    .btn-social {
+      font-size: 14px;
+      height: 45px;
+    }
+  
+    .btn-social img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .edit-button {
+      font-size: 12px;
+    }
+  }
+  
